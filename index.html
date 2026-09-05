@@ -1,406 +1,89 @@
-
-
-
-    
-      transform: translateY(-2px);
-    }
-
-
-    /* =========================
-       SOCIAL
-    ========================= */
-
-    .social {
-      text-align: center;
-    }
-
-    .social-intro {
-      margin-bottom: 20px;
-    }
-
-    .social-buttons {
-      display: flex;
-
-      justify-content: center;
-
-      flex-wrap: wrap;
-
-      gap: 12px;
-    }
-
-    .social-button {
-      display: inline-block;
-
-      min-width: 170px;
-
-      padding: 13px 20px;
-
-      border-radius: 10px;
-
-      background: #111827;
-
-      color: white;
-
-      font-weight: bold;
-
-      transition: 0.25s;
-    }
-
-    .social-button:hover {
-      background: #334155;
-
-      transform: translateY(-2px);
-    }
-
-    .username {
-      display: block;
-
-      font-size: 13px;
-
-      font-weight: normal;
-
-      color: #cbd5e1;
-
-      margin-top: 2px;
-    }
-
-
-    /* =========================
-       GOAL
-    ========================= */
-
-    .goal {
-      text-align: center;
-
-      background:
-        linear-gradient(
-          135deg,
-          #ffffff,
-          #f1f5f9
-        );
-    }
-
-
-    /* =========================
-       FOOTER
-    ========================= */
-
-    footer {
-      text-align: center;
-
-      padding: 30px 20px;
-
-      color: #64748b;
-
-      font-size: 14px;
-    }
-
-
-    /* =========================
-       MOBILE
-    ========================= */
-
-    @media (max-width: 600px) {
-
-      .hero {
-        min-height: 470px;
-
-        padding: 50px 18px;
-      }
-
-      .profile-photo {
-        width: 140px;
-        height: 140px;
-      }
-
-      nav {
-        padding: 13px 5px;
-      }
-
-      nav a {
-        margin: 0 5px;
-
-        font-size: 13px;
-      }
-
-      main {
-        padding: 22px 15px;
-      }
-
-      section {
-        padding: 25px 22px;
-
-        border-radius: 18px;
-      }
-
-      section h2 {
-        font-size: 26px;
-      }
-
-      section p {
-        font-size: 16px;
-      }
-
-      .social-buttons {
-        flex-direction: column;
-
-        align-items: stretch;
-      }
-
-      .social-button {
-        width: 100%;
-      }
-
-      .button {
-        width: 100%;
-
-        text-align: center;
-      }
-
-    }
-
-  </style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fuad Muhammad | Personal Website</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 
 <body>
 
-
-  <!-- =========================
-       HERO
-  ========================= -->
-
-  <header class="hero">
-
-    <div class="hero-content">
-
-      <!-- IMPORTANT:
-           profile.jpg must be beside index.html -->
-
-      <img
-        src="profile.jpg"
-        alt="Fuad Muhammad"
-        class="profile-photo"
-      >
-
-      <h1>Fuad Muhammad</h1>
-
-      <h2>
-        Grade 12 Student • Web Development Learner
-      </h2>
-
-      <p class="hero-description">
-        Welcome to my personal website. I am learning
-        web development, building websites, and developing
-        my skills through real projects.
-      </p>
-
-    </div>
-
-  </header>
-
-
-  <!-- =========================
-       NAVIGATION
-  ========================= -->
-
+<header>
   <nav>
+    <a href="index.html" class="logo">FUAD</a>
 
-    <a href="#about">About</a>
-
-    <a href="#skills">Skills</a>
-
-    <a href="#projects">Projects</a>
-
-    <a href="#connect">Connect</a>
-
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="student.html">Student</a>
+      <a href="developer.html">Developer</a>
+      <a href="dreamer.html">Dreamer</a>
+      <a href="messi.html">Messi Fan</a>
+    </div>
   </nav>
+</header>
 
+<main>
 
-  <main>
+<section class="hero">
 
+  <div class="profile-container">
+    <img src="profile.jpg" alt="Fuad Muhammad" class="profile-photo">
+  </div>
 
-    <!-- =========================
-         ABOUT
-    ========================= -->
+  <p class="small-title">WELCOME TO MY WORLD</p>
 
-    <section id="about">
+  <h1>I'm <span>Fuad Muhammad</span></h1>
 
-      <h2>About Me</h2>
+  <p class="hero-text">
+    Student • Web Developer • Dreamer • Messi Fan
+  </p>
 
-      <p>
-        I am a Grade 12 student currently learning
-        web development. I enjoy learning new digital
-        skills and creating websites.
-      </p>
+  <p class="description">
+    Welcome to my personal website. This is a place where I share
+    my journey, my skills, my dreams, and the things I love.
+  </p>
 
-      <p style="margin-top: 12px;">
-        I have already created website projects and
-        I am continuing to improve my skills through
-        practice, learning, and building new projects.
-      </p>
+</section>
 
-      <div class="about-highlight">
 
-        💻 Learning. Building. Improving.
+<section class="cards">
 
-      </div>
+  <a href="student.html" class="card">
+    <div class="icon">🎓</div>
+    <h2>Student Fuad</h2>
+    <p>My education, learning journey and goals.</p>
+    <span>Explore →</span>
+  </a>
 
-    </section>
+  <a href="developer.html" class="card">
+    <div class="icon">💻</div>
+    <h2>Web Developer Fuad</h2>
+    <p>My coding journey, projects and web development skills.</p>
+    <span>Explore →</span>
+  </a>
 
+  <a href="dreamer.html" class="card">
+    <div class="icon">🚀</div>
+    <h2>The Dreamer Fuad</h2>
+    <p>My ambitions, future goals and vision for tomorrow.</p>
+    <span>Explore →</span>
+  </a>
 
-    <!-- =========================
-         SKILLS
-    ========================= -->
+  <a href="messi.html" class="card">
+    <div class="icon">⚽</div>
+    <h2>Fuad Messi's Fan</h2>
+    <p>A personal space for my love of Lionel Messi and football.</p>
+    <span>Explore →</span>
+  </a>
 
-    <section id="skills">
+</section>
 
-      <h2>My Skills</h2>
+</main>
 
-      <p>
-        These are some of the technologies and areas
-        I am currently learning and practicing.
-      </p>
-
-      <div class="skills">
-
-        <span class="skill">HTML</span>
-
-        <span class="skill">CSS</span>
-
-        <span class="skill">Web Development</span>
-
-        <span class="skill">Website Design</span>
-
-      </div>
-
-    </section>
-
-
-    <!-- =========================
-         PROJECTS
-    ========================= -->
-
-    <section id="projects">
-
-      <h2>My Projects</h2>
-
-      <div class="project-card">
-
-        <div class="project-title">
-          🍽️ Restaurant Website
-        </div>
-
-        <p class="project-description">
-          A restaurant website that I created while
-          learning web development. This project
-          demonstrates my interest in website design
-          and development.
-        </p>
-
-        <a
-          class="button"
-          href="https://mohammadfuad013-lang.github.io/restaurant-website/"
-          target="_blank"
-          rel="noopener noreferrer">
-
-          View Restaurant Website →
-
-        </a>
-
-      </div>
-
-    </section>
-
-
-    <!-- =========================
-         CONNECT
-    ========================= -->
-
-    <section id="connect" class="social">
-
-      <h2>Connect With Me</h2>
-
-      <p class="social-intro">
-        Follow my work and connect with me online.
-      </p>
-
-
-      <div class="social-buttons">
-
-
-        <!-- TIKTOK -->
-
-        <a
-          class="social-button"
-          href="https://www.tiktok.com/@fuadmuhammad50"
-          target="_blank"
-          rel="noopener noreferrer">
-
-          🎵 TikTok
-
-          <span class="username">
-            @fuadmuhammad50
-          </span>
-
-        </a>
-
-
-        <!-- GITHUB -->
-
-        <a
-          class="social-button"
-          href="https://github.com/mohammadfuad01"
-          target="_blank"
-          rel="noopener noreferrer">
-
-          💻 GitHub
-
-          <span class="username">
-            mohammadfuad01
-          </span>
-
-        </a>
-
-      </div>
-
-    </section>
-
-
-    <!-- =========================
-         GOAL
-    ========================= -->
-
-    <section class="goal">
-
-      <h2>My Goal</h2>
-
-      <p>
-        My goal is to continue developing my
-        web-development skills, create useful
-        projects, and grow as a technology creator.
-      </p>
-
-    </section>
-
-
-  </main>
-
-
-  <!-- =========================
-       FOOTER
-  ========================= -->
-
-  <footer>
-
-    © 2026 Fuad Muhammad
-
-    <br>
-
-    Personal Portfolio
-
-  </footer>
-
+<footer>
+  <p>© 2026 Fuad Muhammad. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
