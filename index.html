@@ -2,18 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
   <meta name="description"
-    content="Fuad Muhammad — Grade 12 student, web development learner and young creator.">
+        content="Fuad Muhammad — Grade 12 student and web development learner. Explore my projects, skills and online profiles.">
 
-  <title>Fuad Muhammad | Personal Website</title>
+  <meta name="author"
+        content="Fuad Muhammad">
+
+  <meta name="robots"
+        content="index, follow">
+
+  <title>Fuad Muhammad | Personal Portfolio</title>
 
   <style>
+
+    /* =========================
+       RESET
+    ========================= */
+
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
     html {
@@ -21,207 +34,561 @@
     }
 
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f5f7fb;
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      background: #f4f7fb;
       color: #172033;
+
       line-height: 1.7;
     }
 
-    header {
-      background: linear-gradient(135deg, #111827, #26354d);
-      color: white;
-      text-align: center;
-      padding: 65px 20px 55px;
+    a {
+      text-decoration: none;
     }
 
-    .profile {
-      width: 155px;
-      height: 155px;
-      border-radius: 50%;
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      min-height: 500px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      text-align: center;
+
+      padding: 70px 20px;
+
+      color: white;
+
+      background:
+        linear-gradient(
+          135deg,
+          #0f172a,
+          #1e293b,
+          #334155
+        );
+    }
+
+    .hero-content {
+      max-width: 700px;
+    }
+
+    .profile-photo {
+      width: 165px;
+      height: 165px;
+
       object-fit: cover;
+
+      border-radius: 50%;
+
       border: 5px solid white;
-      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+
+      box-shadow:
+        0 15px 40px rgba(0,0,0,0.35);
+
+      margin-bottom: 25px;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 9vw, 58px);
+
+      margin-bottom: 10px;
+
+      letter-spacing: -1px;
+    }
+
+    .hero h2 {
+      font-size: clamp(18px, 4vw, 24px);
+
+      font-weight: normal;
+
+      color: #cbd5e1;
+
       margin-bottom: 20px;
     }
 
-    header h1 {
-      font-size: clamp(36px, 8vw, 52px);
-      margin-bottom: 7px;
+    .hero-description {
+      max-width: 600px;
+
+      margin: auto;
+
+      color: #dbe4f0;
+
+      font-size: 17px;
     }
 
-    header p {
-      font-size: 18px;
-      color: #dbe4f0;
-    }
+
+    /* =========================
+       NAVIGATION
+    ========================= */
 
     nav {
       position: sticky;
+
       top: 0;
-      z-index: 10;
-      background: white;
+
+      z-index: 100;
+
+      background: rgba(255,255,255,0.96);
+
+      backdrop-filter: blur(10px);
+
+      box-shadow:
+        0 3px 15px rgba(0,0,0,0.08);
+
       text-align: center;
-      padding: 13px;
-      box-shadow: 0 2px 12px rgba(0,0,0,.08);
+
+      padding: 15px 10px;
     }
 
     nav a {
       color: #172033;
-      text-decoration: none;
+
       font-weight: bold;
-      margin: 0 10px;
+
+      margin: 0 9px;
+
+      font-size: 15px;
+
+      transition: 0.2s;
     }
 
     nav a:hover {
-      text-decoration: underline;
+      color: #475569;
     }
 
+
+    /* =========================
+       MAIN
+    ========================= */
+
     main {
-      max-width: 900px;
+      width: 100%;
+
+      max-width: 950px;
+
       margin: auto;
-      padding: 28px 18px;
+
+      padding: 35px 18px;
     }
+
+
+    /* =========================
+       SECTIONS
+    ========================= */
 
     section {
       background: white;
-      margin-bottom: 22px;
-      padding: 30px;
-      border-radius: 18px;
-      box-shadow: 0 6px 24px rgba(20,30,50,.07);
+
+      padding: 35px;
+
+      margin-bottom: 25px;
+
+      border-radius: 20px;
+
+      box-shadow:
+        0 8px 30px rgba(15,23,42,0.07);
     }
 
-    h2 {
-      font-size: 25px;
-      margin-bottom: 13px;
+    section h2 {
+      font-size: 29px;
+
+      margin-bottom: 15px;
+
+      color: #111827;
     }
+
+    section p {
+      font-size: 17px;
+
+      color: #374151;
+    }
+
+
+    /* =========================
+       ABOUT
+    ========================= */
+
+    .about-highlight {
+      margin-top: 20px;
+
+      padding: 18px;
+
+      border-left: 4px solid #1e293b;
+
+      background: #f8fafc;
+
+      border-radius: 8px;
+
+      font-weight: bold;
+    }
+
+
+    /* =========================
+       SKILLS
+    ========================= */
 
     .skills {
       display: flex;
+
       flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 15px;
+
+      gap: 12px;
+
+      margin-top: 20px;
     }
 
     .skill {
+      padding: 10px 18px;
+
+      border-radius: 50px;
+
       background: #eef2ff;
-      border-radius: 999px;
-      padding: 8px 15px;
+
+      color: #1e293b;
+
       font-weight: bold;
+
+      border: 1px solid #e0e7ff;
     }
 
-    .project {
-      border: 1px solid #e4e8ef;
-      border-radius: 14px;
-      padding: 22px;
+
+    /* =========================
+       PROJECT
+    ========================= */
+
+    .project-card {
+      border: 1px solid #e2e8f0;
+
+      border-radius: 16px;
+
+      padding: 25px;
+
+      margin-top: 20px;
+
+      transition: 0.25s;
+
+      background: #ffffff;
     }
 
-    .project h3 {
-      font-size: 21px;
-      margin-bottom: 7px;
+    .project-card:hover {
+      transform: translateY(-3px);
+
+      box-shadow:
+        0 10px 25px rgba(15,23,42,0.08);
     }
+
+    .project-title {
+      font-size: 23px;
+
+      margin-bottom: 8px;
+    }
+
+    .project-description {
+      margin-bottom: 15px;
+    }
+
+
+    /* =========================
+       BUTTONS
+    ========================= */
 
     .button {
       display: inline-block;
-      margin-top: 16px;
-      margin-right: 8px;
-      padding: 11px 18px;
+
+      padding: 12px 20px;
+
+      border-radius: 10px;
+
       background: #111827;
+
       color: white;
-      text-decoration: none;
-      border-radius: 9px;
+
       font-weight: bold;
+
+      transition: 0.25s;
+
+      margin-top: 8px;
     }
 
     .button:hover {
       background: #334155;
+
+      transform: translateY(-2px);
     }
+
+
+    /* =========================
+       SOCIAL
+    ========================= */
 
     .social {
       text-align: center;
     }
 
-    .social .button {
-      margin: 7px;
+    .social-intro {
+      margin-bottom: 20px;
     }
+
+    .social-buttons {
+      display: flex;
+
+      justify-content: center;
+
+      flex-wrap: wrap;
+
+      gap: 12px;
+    }
+
+    .social-button {
+      display: inline-block;
+
+      min-width: 170px;
+
+      padding: 13px 20px;
+
+      border-radius: 10px;
+
+      background: #111827;
+
+      color: white;
+
+      font-weight: bold;
+
+      transition: 0.25s;
+    }
+
+    .social-button:hover {
+      background: #334155;
+
+      transform: translateY(-2px);
+    }
+
+    .username {
+      display: block;
+
+      font-size: 13px;
+
+      font-weight: normal;
+
+      color: #cbd5e1;
+
+      margin-top: 2px;
+    }
+
+
+    /* =========================
+       GOAL
+    ========================= */
+
+    .goal {
+      text-align: center;
+
+      background:
+        linear-gradient(
+          135deg,
+          #ffffff,
+          #f1f5f9
+        );
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
 
     footer {
       text-align: center;
-      padding: 28px 18px;
-      color: #697386;
+
+      padding: 30px 20px;
+
+      color: #64748b;
+
+      font-size: 14px;
     }
 
+
+    /* =========================
+       MOBILE
+    ========================= */
+
     @media (max-width: 600px) {
-      header {
-        padding-top: 45px;
+
+      .hero {
+        min-height: 470px;
+
+        padding: 50px 18px;
       }
 
-      .profile {
-        width: 135px;
-        height: 135px;
+      .profile-photo {
+        width: 140px;
+        height: 140px;
       }
 
-      section {
-        padding: 23px;
+      nav {
+        padding: 13px 5px;
       }
 
       nav a {
-        margin: 0 6px;
-        font-size: 14px;
+        margin: 0 5px;
+
+        font-size: 13px;
       }
+
+      main {
+        padding: 22px 15px;
+      }
+
+      section {
+        padding: 25px 22px;
+
+        border-radius: 18px;
+      }
+
+      section h2 {
+        font-size: 26px;
+      }
+
+      section p {
+        font-size: 16px;
+      }
+
+      .social-buttons {
+        flex-direction: column;
+
+        align-items: stretch;
+      }
+
+      .social-button {
+        width: 100%;
+      }
+
+      .button {
+        width: 100%;
+
+        text-align: center;
+      }
+
     }
+
   </style>
 </head>
 
+
 <body>
 
-  <header>
 
-    <!-- Keep profile.jpg in the same folder as index.html -->
-    <img src="profile.jpg" alt="Fuad Muhammad" class="profile">
+  <!-- =========================
+       HERO
+  ========================= -->
 
-    <h1>Fuad Muhammad</h1>
+  <header class="hero">
 
-    <p>
-      Grade 12 Student • Web Development Learner • Young Creator
-    </p>
+    <div class="hero-content">
+
+      <!-- IMPORTANT:
+           profile.jpg must be beside index.html -->
+
+      <img
+        src="profile.jpg"
+        alt="Fuad Muhammad"
+        class="profile-photo"
+      >
+
+      <h1>Fuad Muhammad</h1>
+
+      <h2>
+        Grade 12 Student • Web Development Learner
+      </h2>
+
+      <p class="hero-description">
+        Welcome to my personal website. I am learning
+        web development, building websites, and developing
+        my skills through real projects.
+      </p>
+
+    </div>
 
   </header>
 
 
+  <!-- =========================
+       NAVIGATION
+  ========================= -->
+
   <nav>
+
     <a href="#about">About</a>
+
     <a href="#skills">Skills</a>
+
     <a href="#projects">Projects</a>
+
     <a href="#connect">Connect</a>
+
   </nav>
 
 
   <main>
 
-    <!-- ABOUT -->
+
+    <!-- =========================
+         ABOUT
+    ========================= -->
+
     <section id="about">
 
       <h2>About Me</h2>
 
       <p>
-        I am a Grade 12 student currently learning web development.
-        I enjoy learning new digital skills and creating websites.
-        I have already built website projects and I am continuing
-        to improve my skills through practice and learning.
+        I am a Grade 12 student currently learning
+        web development. I enjoy learning new digital
+        skills and creating websites.
       </p>
+
+      <p style="margin-top: 12px;">
+        I have already created website projects and
+        I am continuing to improve my skills through
+        practice, learning, and building new projects.
+      </p>
+
+      <div class="about-highlight">
+
+        💻 Learning. Building. Improving.
+
+      </div>
 
     </section>
 
 
-    <!-- SKILLS -->
+    <!-- =========================
+         SKILLS
+    ========================= -->
+
     <section id="skills">
 
       <h2>My Skills</h2>
 
+      <p>
+        These are some of the technologies and areas
+        I am currently learning and practicing.
+      </p>
+
       <div class="skills">
 
         <span class="skill">HTML</span>
+
         <span class="skill">CSS</span>
+
         <span class="skill">Web Development</span>
+
         <span class="skill">Website Design</span>
 
       </div>
@@ -229,26 +596,35 @@
     </section>
 
 
-    <!-- PROJECTS -->
+    <!-- =========================
+         PROJECTS
+    ========================= -->
+
     <section id="projects">
 
       <h2>My Projects</h2>
 
-      <div class="project">
+      <div class="project-card">
 
-        <h3>🍽️ Restaurant Website</h3>
+        <div class="project-title">
+          🍽️ Restaurant Website
+        </div>
 
-        <p>
-          A restaurant website project I created while learning
-          web development.
+        <p class="project-description">
+          A restaurant website that I created while
+          learning web development. This project
+          demonstrates my interest in website design
+          and development.
         </p>
 
         <a
           class="button"
           href="https://mohammadfuad013-lang.github.io/restaurant-website/"
           target="_blank"
-          rel="noopener">
-          View Website
+          rel="noopener noreferrer">
+
+          View Restaurant Website →
+
         </a>
 
       </div>
@@ -256,58 +632,94 @@
     </section>
 
 
-    <!-- SOCIAL -->
+    <!-- =========================
+         CONNECT
+    ========================= -->
+
     <section id="connect" class="social">
 
       <h2>Connect With Me</h2>
 
-      <p>
+      <p class="social-intro">
         Follow my work and connect with me online.
       </p>
 
 
-      <!-- TikTok -->
-      <a
-        class="button"
-        href="https://www.tiktok.com/@fuadmuhammad50"
-        target="_blank"
-        rel="noopener">
-        🎵 TikTok
-      </a>
+      <div class="social-buttons">
 
 
-      <!-- GitHub -->
-      <a
-        class="button"
-        href="https://github.com/mohammadfuad01"
-        target="_blank"
-        rel="noopener">
-        💻 GitHub
-      </a>
+        <!-- TIKTOK -->
+
+        <a
+          class="social-button"
+          href="https://www.tiktok.com/@fuadmuhammad50"
+          target="_blank"
+          rel="noopener noreferrer">
+
+          🎵 TikTok
+
+          <span class="username">
+            @fuadmuhammad50
+          </span>
+
+        </a>
+
+
+        <!-- GITHUB -->
+
+        <a
+          class="social-button"
+          href="https://github.com/mohammadfuad01"
+          target="_blank"
+          rel="noopener noreferrer">
+
+          💻 GitHub
+
+          <span class="username">
+            mohammadfuad01
+          </span>
+
+        </a>
+
+      </div>
 
     </section>
 
 
-    <!-- GOAL -->
-    <section>
+    <!-- =========================
+         GOAL
+    ========================= -->
+
+    <section class="goal">
 
       <h2>My Goal</h2>
 
       <p>
-        My goal is to continue developing my web-development skills,
-        build useful projects, and grow as a technology creator.
+        My goal is to continue developing my
+        web-development skills, create useful
+        projects, and grow as a technology creator.
       </p>
 
     </section>
 
+
   </main>
 
 
+  <!-- =========================
+       FOOTER
+  ========================= -->
+
   <footer>
 
-    © 2026 Fuad Muhammad • Personal Portfolio
+    © 2026 Fuad Muhammad
+
+    <br>
+
+    Personal Portfolio
 
   </footer>
+
 
 </body>
 </html>
