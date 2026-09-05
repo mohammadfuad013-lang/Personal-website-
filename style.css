@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fuad Messi's Fan | Fuad Muhammad</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo">FUAD</a>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="student.html">Student</a>
+      <a href="developer.html">Developer</a>
+      <a href="dreamer.html">Dreamer</a>
+      <a href="messi.html">Messi Fan</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<section class="page-section messi-page">
+
+  <div class="page-icon">⚽</div>
+
+  <h1>Fuad <span>Messi's Fan</span></h1>
+
+  <p class="lead">
+    Football, passion and inspiration.
+  </p>
+
+  <div class="content-box">
+
+    <h2>Why I Love Messi</h2>
+
+    <p>
+      Lionel Messi is one of the football players I admire most.
+      His creativity, discipline, vision and dedication to football
+      are inspiring.
+    </p>
+
+  </div>
+
+  <div class="content-box">
+
+    <h2>My Favorite Things About Messi</h2>
+
+    <div class="tags">
+      <span>⚽ Football</span>
+      <span>🏆 Winning</span>
+      <span>✨ Creativity</span>
+      <span>🔥 Determination</span>
+      <span>🎯 Goals</span>
+      <span>🌟 Inspiration</span>
+    </div>
+
+  </div>
+
+  <div class="quote-box">
+
+    <p>
+      "Talent is not enough. Hard work makes the difference."
+    </p>
+
+    <span>— Fuad</span>
+
+  </div>
+
+  <a href="index.html" class="back-button">← Back Home</a>
+
+</section>
+
+</main>
+
+<footer>
+  <p>© 2026 Fuad Muhammad</p>
+</footer>
+
+</body>
+</html>
