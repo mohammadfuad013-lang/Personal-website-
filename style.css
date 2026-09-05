@@ -384,5 +384,28 @@ footer {
   .content-box {
     padding: 23px;
   }
-
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
 }
+
+.social-button {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 50px;
+  background: rgba(96, 165, 250, 0.12);
+  border: 1px solid rgba(96, 165, 250, 0.3);
+  color: #dbeafe;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.social-button:hover {
+  transform: translateY(-3px);
+  background: rgba(96, 165, 250, 0.2);
+}
+
+
